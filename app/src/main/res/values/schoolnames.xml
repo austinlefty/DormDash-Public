@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="schools">
+        <item>Appalachian State University</item>
+        <item>Asbury University</item>
+        <item>Austin College</item>
+        <item>Bellevue University</item>
+        <item>Belmont University</item>
+        <item>Brown University</item>
+        <item>Carthage College</item>
+        <item>Central College</item>
+        <item>Coe College</item>
+        <item>Colorado College</item>
+        <item>Cornell College</item>
+        <item>Dartmouth College</item>
+        <item>Drake University</item>
+        <item>Lewis University</item>
+        <item>Massachusetts Institute of Technology</item>
+        <item>Miami University</item>
+        <item>Michigan State University</item>
+        <item>Middlesex County College</item>
+        <item>Minnesota State University</item>
+        <item>Missouri State University</item>
+        <item>New Jersey City University</item>
+        <item>North Central College</item>
+        <item>North Georgia Technical College</item>
+        <item>Northeastern Illinois University</item>
+        <item>Northern Illinois University</item>
+        <item>Northwest Florida State College</item>
+        <item>Northwestern University</item>
+        <item>Ohio State University</item>
+        <item>Ohio University</item>
+        <item>Oregon State University</item>
+        <item>Portland State University</item>
+        <item>Princeton University</item>
+        <item>Rice University</item>
+        <item>Roosevelt University</item>
+        <item>Search School</item>
+        <item>Seattle University</item>
+        <item>South Carolina</item>
+        <item>South Texas College</item>
+        <item>United States Air Force Academy</item>
+        <item>University of  Baltimore</item>
+        <item>University of Dayton</item>
+        <item>University of Florida</item>
+        <item>University of Illinois at Chicago</item>
+        <item>University of Notre Dame</item>
+        <item>University of Tennessee Chattanooga</item>
+        <item>University of Wisconsin, Madison</item>
+        <item>Valparaiso University</item>
+        <item>Virginia State University</item>
+        <item>Wheaton College</item>
+        <item>Williams College</item>
+        <item>Yale University</item>
+    </string-array>
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:textAlignment="center"
+    tools:context=".ui.FoodConfirmationFragment">
+
+
+    <ImageView
+        android:id="@+id/foodImg"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:gravity="right"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodImg">
+
+        <TextView
+            android:id="@+id/foodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="center"
+            android:text="@{isFood.foodName}"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold|normal" />
+
+        <TextView
+            android:id="@+id/foodInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="center"
+            android:text="@{isFood.foodDescription}"
+            android:textColor="#787878"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/foodPrice"
+        android:layout_width="82dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="108dp"
+        android:elevation="100dp"
+        android:fontFamily="@font/dm_sans"
+        android:gravity="center"
+        android:hapticFeedbackEnabled="true"
+        android:text="10.10"
+        android:textAlignment="gravity"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/add_to_cart_button"
+        app:layout_constraintTop_toTopOf="@+id/add_to_cart_button" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/increment_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="75dp"
+        android:fontFamily="@font/dm_sans"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="#E6F85102"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/decrement_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/dm_sans"
+        android:src="@drawable/ic_subtract"
+        app:backgroundTint="#E6F85102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/quantity_text_view"
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="58dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:fontFamily="@font/dm_sans"
+        app:layout_constraintEnd_toStartOf="@+id/increment_button"
+        app:layout_constraintStart_toEndOf="@+id/decrement_button"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/foodModify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/modify_text"
+        android:paddingHorizontal="60dp"
+        app:layout_constraintBottom_toBottomOf="@id/add_to_cart_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quantity_text_view"
+        app:layout_constraintVertical_bias="0.25">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/foodModifyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:textSize="16dp"
+            android:fontFamily="@font/dm_sans"
+            android:textAlignment="center"
+            android:background="@drawable/food_modify"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/add_to_cart_button"
+        android:layout_width="296dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/dm_sans"
+        android:gravity="top|center"
+        android:text="Add to Cart"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modifications may require additional fee"
+        android:fontFamily="@font/dm_sans"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/add_to_cart_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodModify"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

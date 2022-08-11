@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/miHome"
+        android:title="Home"
+        android:icon="@drawable/ic_home" />
+
+    <item android:id="@+id/miSearch"
+        android:title="Search"
+        android:icon="@drawable/ic_search" />
+
+    <item android:id="@+id/miCart"
+        android:title="Cart"
+        android:icon="@drawable/ic_cart" />
+
+    <item android:id="@+id/miAccount"
+        android:title="Account"
+        android:icon="@drawable/ic_account" />
+
+    <item
+        android:id="@+id/miOrderStatus"
+        android:icon="@drawable/ic_baseline_receipt_24"
+        android:title="Order" />
+</menu>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:backgroundTintMode="src_over"
+    tools:context=".ui.MainFragment">
+
+    <TextView
+        android:id="@+id/label_welcome_text"
+        android:layout_width="332dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/dm_sans_medium"
+        android:text="@string/welcome_text"
+        android:textAlignment="center"
+        android:textColor="#FAFAFA"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <android.widget.Button
+        android:id="@+id/main_login_button"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="224dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#00000000"
+        android:backgroundTintMode="src_over"
+        android:fontFamily="@font/dm_sans"
+        android:text="@string/login_button_text"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/main_register_button"
+        app:layout_constraintTop_toBottomOf="@+id/label_welcome_text"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <android.widget.Button
+        android:id="@+id/main_register_button"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/dm_sans"
+        android:text="@string/register_button_text"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_login_button" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="281dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/main_menu_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

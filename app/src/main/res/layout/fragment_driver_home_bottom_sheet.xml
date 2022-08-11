@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="7dp"
+    android:orientation="vertical"
+    android:padding="15dp"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="230dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    tools:context=".driver.bottomsheetbehavior.DriverHomeBottomSheetFragment">
+
+    <LinearLayout
+        android:id="@+id/outerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/distLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:id="@+id/delivery_duration_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/delivery_duration_label"
+                android:textSize="20sp"
+                android:fontFamily="@font/dm_sans_medium"/>
+
+            <TextView
+                android:id="@+id/delivery_duration_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="right"
+                android:text="@string/delivery_duration_text"
+                android:textSize="20sp"
+                android:fontFamily="@font/dm_sans"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/distance_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/delivery_distance_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/delivery_distance_label"
+                android:textSize="20sp"
+                android:fontFamily="@font/dm_sans_medium"/>
+
+            <TextView
+                android:id="@+id/delivery_distance_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="right"
+                android:text="@string/delivery_distance_text"
+                android:textSize="20sp"
+                android:fontFamily="@font/dm_sans"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/earnings_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/delivery_earnings_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/delivery_earnings_label"
+                android:textSize="20sp"
+                android:fontFamily="@font/dm_sans_medium"/>
+
+            <TextView
+                android:id="@+id/delivery_earnings_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="right"
+                android:text="@string/delivery_earnings_text"
+                android:textSize="20sp"
+                android:fontFamily="@font/dm_sans"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/accept_work_btn"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/accept_work_btn"
+                android:fontFamily="@font/dm_sans"
+                android:background="@drawable/button"/>
+
+            <Button
+                android:id="@+id/decline_work_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:text="@string/decline_work_btn"
+                android:fontFamily="@font/dm_sans"
+                android:background="@drawable/button"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

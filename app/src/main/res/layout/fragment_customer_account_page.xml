@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/account_text"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/dm_sans"
+        android:text="Account"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/first_name"
+        app:layout_constraintBottom_toTopOf="@+id/first_name_text"
+        app:layout_constraintStart_toStartOf="@+id/first_name_text" />
+
+    <EditText
+        android:id="@+id/first_name_text"
+        android:layout_width="280dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="100dp"
+        android:autofillHints="First Name"
+        android:ems="10"
+        android:hint="Enter First Name"
+        android:inputType="textPersonName"
+        android:minHeight="48sp"
+        android:background="@drawable/food_modify"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/account_text" />
+
+    <TextView
+        android:id="@+id/lname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_name"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/last_name_text"
+        app:layout_constraintStart_toStartOf="@+id/last_name_text"
+        app:layout_constraintTop_toBottomOf="@+id/first_name_text" />
+
+    <EditText
+        android:id="@+id/last_name_text"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="Last Name"
+        android:ems="10"
+        android:hint="Enter Last Name"
+        android:inputType="textPersonName"
+        android:minHeight="48sp"
+        android:background="@drawable/food_modify"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/first_name_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/first_name_text"
+        app:layout_constraintTop_toBottomOf="@+id/lname" />
+
+    <TextView
+        android:id="@+id/pnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_number"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/phone_num_text"
+        app:layout_constraintStart_toStartOf="@+id/phone_num_text"
+        app:layout_constraintTop_toBottomOf="@+id/last_name_text" />
+
+    <EditText
+        android:id="@+id/phone_num_text"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="phone"
+        android:ems="10"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:minHeight="48sp"
+        android:background="@drawable/food_modify"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/first_name_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/first_name_text"
+        app:layout_constraintTop_toBottomOf="@+id/pnumber" />
+
+    <TextView
+        android:id="@+id/sid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/school_id_please_check_if_correct"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/id_text"
+        app:layout_constraintStart_toStartOf="@+id/id_text"
+        app:layout_constraintTop_toBottomOf="@+id/phone_num_text" />
+
+    <EditText
+        android:id="@+id/id_text"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="School ID"
+        android:ems="10"
+        android:hint="Enter School ID"
+        android:inputType="number"
+        android:minHeight="48sp"
+        android:background="@drawable/food_modify"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/first_name_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/first_name_text"
+        app:layout_constraintTop_toBottomOf="@+id/sid" />
+
+    <android.widget.Button
+        android:id="@+id/save_button"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/dm_sans_medium"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomAppBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_text"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="BottomAppBar">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:background="@color/ic_launcher_background"
+            app:menu="@menu/bottom_nav" />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

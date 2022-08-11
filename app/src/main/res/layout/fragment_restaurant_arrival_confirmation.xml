@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="7dp"
+    android:orientation="vertical"
+    android:padding="15dp"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="230dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    tools:context=".driver.bottomsheetbehavior.RestaurantArrivalConfirmationFragment">
+
+    <LinearLayout
+        android:id="@+id/outerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/confirm_restaurant_arrival_title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="@string/confirm_status_label"
+            android:textSize="20sp"
+            android:fontFamily="@font/dm_sans"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/arrived_at_restaurant_label"
+                android:layout_width="254dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/arrived_at_restaruant_label"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/dm_sans_medium"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/arrived_at_restaurant_btn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/arrived_at_restaruant_btn"
+                android:fontFamily="@font/dm_sans"
+                android:background="@drawable/button"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ready_to_deliver"
+                android:layout_width="254dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/ready_to_deliver_label"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/dm_sans_medium"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/start_customer_navigation_btn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/start_customer_navigation"
+                android:fontFamily="@font/dm_sans"
+                android:background="@drawable/button"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/dropped_off_label"
+                android:layout_width="254dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/food_drop_off_label"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/dm_sans_medium"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/confirm_dropped_food_btn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/confirm_dropped_food_btn"
+                android:fontFamily="@font/dm_sans"
+                android:background="@drawable/button"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/google_maps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/open_google_maps_button"
+                android:fontFamily="@font/dm_sans_medium"
+                android:textSize="18sp"
+                android:background="@drawable/button2"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

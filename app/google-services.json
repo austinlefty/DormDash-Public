@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "93397566014",
+    "firebase_url": "https://dormdash-f3d01-default-rtdb.firebaseio.com",
+    "project_id": "dormdash-f3d01",
+    "storage_bucket": "dormdash-f3d01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93397566014:android:a0a8c4bd8363298835476f",
+        "android_client_info": {
+          "package_name": "com.dormdash.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93397566014-03625ce6qfbr5ftt15ilocnjsqc796j1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dormdash.android",
+            "certificate_hash": "044a258448729c493c8761ce480cbe1f281e6093"
+          }
+        },
+        {
+          "client_id": "93397566014-rrck2fibcjr20046v4crtguhe14mo5on.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNT3dJVzDU28A8u-bjVOftJhUOjYqncEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93397566014-rrck2fibcjr20046v4crtguhe14mo5on.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

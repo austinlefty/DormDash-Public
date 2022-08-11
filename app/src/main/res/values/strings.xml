@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">DormDash</string>
+    <string name="welcome_text">Helping Students with Food and Finances</string>
+    <string name="info_lable">Forgot Username or Password?</string>
+    <string name="login_button_text">Login</string>
+    <string name="register_button_text">Get Started</string>
+    <string name="Register1_header_label">Let\'s Get You Situated</string>
+    <string name="Register2_header_label">Step 2: Verify Credentials</string>
+    <string name="Register3_header_label">Step 3: Enter Account Information</string>
+    <string name="register_next">Next</string>
+    <string name="register_register_button">Register</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="root_homepage">What would you like to do?</string>
+    <string name="register_cancel_button">X</string>
+    <string name="login_label">Welcome Back</string>
+    <string name="verify_email_text">Verify You\'re a Student</string>
+    <string name="school_id_hint">School ID</string>
+    <string name="school_email_hint">Account Email</string>
+    <string name="register_first_name_text">First Name</string>
+    <string name="register_last_name_text">Last Name</string>
+    <string name="register_phone_num_text">Phone Number</string>
+    <string name="register_pswrd_text">Password</string>
+    <string name="root_homepage_sign_out_text">Sign Out</string>
+    <string name="register_verify_text">Verify Me</string>
+    <string name="select_customer_text">Order</string>
+    <string name="select_deliver_button">Deliver</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="eta_text">eta</string>
+    <string name="fee_text">fee</string>
+    <string name="address_text">address</string>
+    <string name="name_text">name</string>
+    <string name="total_text">Total</string>
+    <string name="subtotal_label">SubTotal</string>
+    <string name="delivery_fee_label">Delivery Fee</string>
+    <string name="service_fee_lable">Service Fee</string>
+    <string name="tax_label">Tax</string>
+    <string name="modify_text">Add modficications, if any...</string>
+    <string name="delivery_address">Delivery Address / Room #</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="school_id_please_check_if_correct">School ID (Please check if correct)</string>
+    <string name="save">Save</string>
+    <string name="switch1">Online</string>
+    <string name="work_status_text">Waiting to be assigned....</string>
+    <string name="accept_work_btn">Accept</string>
+    <string name="decline_work_btn">Decline</string>
+    <string name="order_payment">Minimum Earnings:</string>
+    <string name="min_earnings_text">0.00</string>
+    <string name="driver_uid_text">UID</string>
+    <string name="status_revc_label">Order Received</string>
+    <string name="status_started_label">Order Started</string>
+    <string name="status_onw_label">Driver On Its Way</string>
+    <string name="status_dropped_off_label">Dropped Off</string>
+    <string name="leave_tip_button_text">Leave a Tip</string>
+    <string name="order_title_fragment">Your Order Status</string>
+
+    <!-- Checkout activity -->
+    <string name="title_activity_checkout">CheckoutActivity</string>
+    <string name="checkout_item_description">Description</string>
+    <string name="googlepay_status_unavailable" translatable="false">Unfortunately, Google Pay is
+        not available on this phone.
+    </string>
+    <string name="payments_show_name" translatable="false">Successfully received payment data for
+        %s!
+    </string>
+    <string name="next_step_text">123 Main Street</string>
+    <string name="destination_text">Destination</string>
+    <string name="units_til_next_step">1.4 miles</string>
+    <string name="car_tab">Drive</string>
+    <string name="bike_tab">Bike</string>
+    <string name="walk_tab">Walk</string>
+    <string name="delivery_distance_label">Total Distance</string>
+    <string name="delivery_distance_text">0.0</string>
+    <string name="delivery_duration_label">Duration</string>
+    <string name="delivery_duration_text">1 min</string>
+    <string name="delivery_earnings_label">Guarantee Earnings</string>
+    <string name="delivery_earnings_text">0.00</string>
+    <string name="destination_label">To:</string>
+    <string name="destination_to_text">Au Bon Pain</string>
+    <string name="open_google_maps_button">Start Navigation</string>
+    <string name="confirm_restaurant_arrival_title_label">Confirm Restaurant Arrival</string>
+    <string name="confirm_status_label">Confirm and Update Steps</string>
+    <string name="arrived_at_restaruant_label">Arrived At Restaurant</string>
+    <string name="arrived_at_restaruant_btn">Arrived</string>
+    <string name="ready_to_deliver_label">Ready To Deliver</string>
+    <string name="start_customer_navigation">Start</string>
+    <string name="dropped_off_label">Dropped off Food</string>
+    <string name="food_drop_off_label">Food Delivered</string>
+    <string name="confirm_dropped_food_btn">Confirm</string>
+    <string name="driver_on_the_way_to_restaurant">Driver On The Way To Restaurant</string>
+    <string name="driver_arrived_at_restaurant">Driver Arrived At Restaurant</string>
+    <string name="update_text">Your order has been sent! Waiting for restaurant to confirm.</string>
+    <string name="confirm_pickup">CONFIRM PICKUP</string>
+    <string name="driver_wellDoneText_label">Well done! You have completed your order!</string>
+    <string name="driver_earnings_label">Order Earnings:</string>
+    <string name="driver_earnings_text">X dollars</string>
+    <string name="next_button">Next Order</string>
+    <string name="cash_out_button">Cash Out</string>
+</resources>

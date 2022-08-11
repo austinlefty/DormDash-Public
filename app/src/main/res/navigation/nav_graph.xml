@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment2">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.dormdash.android.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homePage"
+            app:destination="@id/homePage"
+            app:enterAnim="@anim/fade_in" />
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment2"
+            app:destination="@id/mainFragment2"
+            app:enterAnim="@anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment2"
+        android:name="com.dormdash.android.ui.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment2_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/fade_in" />
+        <action
+            android:id="@+id/action_mainFragment2_to_registerFindSchool"
+            app:destination="@id/registerFindSchool"
+            app:enterAnim="@anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFindSchool"
+        android:name="com.dormdash.android.ui.RegisterFindSchool"
+        android:label="fragment_register_find_school"
+        tools:layout="@layout/fragment_register_find_school" >
+        <action
+            android:id="@+id/action_registerFindSchool_to_registerVerifySchoolCredentials"
+            app:destination="@id/registerVerifySchoolCredentials"
+            app:enterAnim="@anim/fade_in" />
+        <action
+            android:id="@+id/action_registerFindSchool_to_mainFragment2"
+            app:destination="@id/mainFragment2"
+            app:enterAnim="@anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerVerifySchoolCredentials"
+        android:name="com.dormdash.android.ui.RegisterVerifySchoolCredentials"
+        android:label="fragment_register_verify_school_credentials"
+        tools:layout="@layout/fragment_register_verify_school_credentials" >
+        <action
+            android:id="@+id/action_registerVerifySchoolCredentials_to_homePage"
+            app:destination="@id/homePage"
+            app:enterAnim="@anim/fade_in" />
+        <action
+            android:id="@+id/action_registerVerifySchoolCredentials_to_registerFindSchool"
+            app:destination="@id/registerFindSchool"
+            app:enterAnim="@anim/fade_in"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/mainFragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.dormdash.android.ui.HomePage"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePage_to_mainFragment2"
+            app:destination="@id/mainFragment2"
+            app:enterAnim="@anim/fade_in"
+            app:popUpTo="@id/mainFragment2"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homePage_to_customerHomePage"
+            app:destination="@id/customerHomePage"
+            app:enterAnim="@anim/fade_in"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_homePage_to_driverHomePageFragment"
+            app:destination="@id/driverHomePageFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/customerHomePage"
+        android:name="com.dormdash.android.ui.CustomerHomePage"
+        android:label="fragment_customer_home_page"
+        tools:layout="@layout/fragment_customer_home_page" >
+        <action
+            android:id="@+id/action_customerHomePage_to_homePage"
+            app:destination="@id/homePage"
+            app:enterAnim="@anim/fade_in"
+            app:popUpTo="@id/homePage"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_customerHomePage_to_foodMenuFragment"
+            app:destination="@id/foodMenuFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popUpTo="@id/foodMenuFragment" />
+        <action
+            android:id="@+id/action_customerHomePage_to_viewCartFragment"
+            app:destination="@id/viewCartFragment"
+            app:enterAnim="@anim/fade_in" />
+        <action
+            android:id="@+id/action_customerHomePage_to_customerAccountPage"
+            app:destination="@id/customerAccountPage"
+            app:enterAnim="@anim/fade_in" />
+        <action
+            android:id="@+id/action_customerHomePage_to_orderStatusFragment"
+            app:destination="@id/orderStatusFragment"
+            app:enterAnim="@anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodMenuFragment"
+        android:name="com.dormdash.android.ui.FoodMenuFragment"
+        android:label="FoodMenuFragment"
+        tools:layout="@layout/fragment_food_menu">
+        <argument
+            android:name="name"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="fee"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="img"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="address"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="eta"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="menuId"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_foodMenuFragment_to_foodConfirmationFragment"
+            app:destination="@id/foodConfirmationFragment"
+            app:enterAnim="@anim/fade_in" />
+        <action
+            android:id="@+id/action_foodMenuFragment_to_viewCartFragment"
+            app:destination="@id/viewCartFragment"
+            app:enterAnim="@anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodConfirmationFragment"
+        android:name="com.dormdash.android.ui.FoodConfirmationFragment"
+        android:label="fragment_food_confirmation"
+        tools:layout="@layout/fragment_food_confirmation" >
+        <argument
+            android:name="foodDescription"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="foodImg"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="foodName"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="foodPrice"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_foodConfirmationFragment_to_foodMenuFragment"
+            app:destination="@id/foodMenuFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="menuID"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewCartFragment"
+        android:name="com.dormdash.android.ui.ViewCartFragment"
+        android:label="ViewCartFragment"
+        tools:layout="@layout/fragment_view_cart" >
+        <action
+            android:id="@+id/action_viewCartFragment_to_foodOrderConfirmationFragment"
+            app:destination="@id/foodOrderConfirmationFragment"
+            app:enterAnim="@anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodOrderConfirmationFragment"
+        android:name="com.dormdash.android.ui.FoodOrderConfirmationFragment"
+        android:label="FoodOrderConfirmationFragment"
+        tools:layout="@layout/fragment_food_order_confirmation">
+        <action
+            android:id="@+id/action_foodOrderConfirmationFragment_to_orderStatusFragment"
+            app:destination="@id/orderStatusFragment"
+            app:enterAnim="@anim/fade_in" />
+        <action
+            android:id="@+id/action_foodOrderConfirmationFragment_to_paymentMethodFragment"
+            app:destination="@id/paymentMethodFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popUpTo="@id/foodOrderConfirmationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/customerAccountPage"
+        android:name="com.dormdash.android.ui.CustomerAccountPage"
+        android:label="fragment_customer_account_page"
+        tools:layout="@layout/fragment_customer_account_page" >
+        <action
+            android:id="@+id/action_customerAccountPage_to_viewCartFragment"
+            app:destination="@id/viewCartFragment"
+            app:enterAnim="@anim/fade_in" />
+        <action
+            android:id="@+id/action_customerAccountPage_to_customerHomePage"
+            app:destination="@id/customerHomePage"
+            app:enterAnim="@anim/fade_in" />
+        <action
+            android:id="@+id/action_customerAccountPage_to_orderStatusFragment"
+            app:destination="@id/orderStatusFragment"
+            app:enterAnim="@anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/driverHomePageFragment"
+        android:name="com.dormdash.android.driver.ui.DriverHomePageFragment"
+        android:label="fragment_driver_home_page"
+        tools:layout="@layout/fragment_driver_home_page" >
+        <action
+            android:id="@+id/action_driverHomePageFragment_to_directionsFragment"
+            app:destination="@id/directionsFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_driverHomePageFragment_to_homePage"
+            app:destination="@id/homePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderStatusFragment"
+        android:name="com.dormdash.android.ui.OrderStatusFragment"
+        android:label="fragment_order_status"
+        tools:layout="@layout/fragment_order_status" >
+        <action
+            android:id="@+id/action_orderStatusFragment_to_customerAccountPage"
+            app:destination="@id/customerAccountPage"
+            app:enterAnim="@anim/fade_in" />
+        <action
+            android:id="@+id/action_orderStatusFragment_to_viewCartFragment"
+            app:destination="@id/viewCartFragment"
+            app:enterAnim="@anim/fade_in" />
+        <action
+            android:id="@+id/action_orderStatusFragment_to_customerHomePage"
+            app:destination="@id/customerHomePage"
+            app:enterAnim="@anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/directionsFragment"
+        android:name="com.dormdash.android.driver.ui.DirectionsFragment"
+        android:label="fragment_directions"
+        tools:layout="@layout/fragment_directions" >
+        <action
+            android:id="@+id/action_directionsFragment_to_driverHomePageFragment"
+            app:destination="@id/driverHomePageFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/checkoutActivity"
+        android:name="com.dormdash.android.ui.CheckoutActivity"
+        android:label="activity_checkout"
+        tools:layout="@layout/activity_checkout" />
+    <fragment
+        android:id="@+id/paymentMethodFragment"
+        android:name="com.dormdash.android.ui.viewmodel.PaymentMethodFragment"
+        android:label="fragment_payment_method"
+        tools:layout="@layout/fragment_payment_method" >
+        <action
+            android:id="@+id/action_paymentMethodFragment_to_foodOrderConfirmationFragment"
+            app:destination="@id/foodOrderConfirmationFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popUpTo="@id/foodOrderConfirmationFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+</navigation>
